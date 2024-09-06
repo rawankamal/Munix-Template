@@ -523,59 +523,49 @@ footer .btn:hover {
 }
 
 /* Media Queries */
-/* Media Queries */
 
 /* Large screens (min-width: 992px) */
 @media screen and (min-width: 992px) {
+
+    /* Carousel caption */
     .carousel-caption h1 {
         font-size: 4rem;
     }
 
+    /* Title font size */
     .title span {
         font-size: 40px;
     }
 }
-
-/* Medium to large screens (min-width: 769px and max-width: 991px) */
-@media screen and (min-width: 769px) and (max-width: 991px) {
-    .carousel-caption h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Medium and small screens (max-width: 768px) */
+/* Medium to small screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
 
     .carousel-caption h1 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
+    } 
+    
+    .details-box {
+        left: 0;
     }
-
+    .title h3 {
+        padding: 0 5px;
+    }
     .carousel-caption button {
         padding: 0.5rem 1.5rem;
         font-size: 0.9rem;
         margin: 10px 5px;
         width: auto;
-    }
-
+    }    
     .carousel-caption button:first-child {
         margin-bottom: 10px;
+        /* Space between buttons */
     }
-
-    .details-box,
-    .about-section .abt-img {
-        float: none;
-        width: 100%;
-        margin: 0 auto;
+    .carousel-indicators {
+        flex-direction: row !important;
+        justify-content: center !important;
+        bottom: 0;
         left: 0;
-    }
-
-    .details-box {
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-    .title h3 {
-        padding: 0 5px;
+        margin: 0 0 15px;
     }
 
     /* Ensure no overflow */
@@ -585,45 +575,49 @@ footer .btn:hover {
         padding: 0;
     }
 
-    .carousel-indicators {
-        flex-direction: row !important;
-        justify-content: center !important;
-        bottom: 0;
-        left: 0;
-        margin: 0 0 15px;
+    /* Responsive details box */
+    .about-section .abt-img,
+    .details-box {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    /* Other adjustments */
-    .services .child .btn {
+    .details-box {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .services .child .btn{
         margin-top: 5px;
     }
-
-    .title p {
+    .title p{
         font-size: 12px;
     }
 }
 
-/* Very small screens (max-width: 458px) */
+/* Small screens (max-width: 458px) */
 @media screen and (max-width: 458px) {
+
+    /* Adjust padding for price nav-pills */
     .price .nav-pills li a {
         padding: 15px 30px;
     }
+}
+.title span::before {
+    left: -55px;
+}
 
-    .title span {
-        font-size: 22px;
-    }
-
-    .title span::before {
-        left: -55px;
-    }
-
-    .title span::after {
-        right: -55px;
-    }
+.title span::after {
+    right: -55px;
+}
+.title span {
+    font-size: 22px;
 }
 
 /* Extra large screens (min-width: 1120px) */
 @media (min-width: 1120px) {
+
+    /* Custom container width for larger screens */
     .container-custom {
         width: 75%;
         margin: auto;
