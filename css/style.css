@@ -236,7 +236,9 @@ caption {
 .parent {
     padding: 30px 0px;
 } 
-
+.services .parent {
+    padding: 60px 0px;
+}
 .child {
     top: 100%;
     left: 0;
