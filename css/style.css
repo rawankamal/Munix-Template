@@ -276,7 +276,7 @@ caption {
     transition: all ease 0.5s;
 }
 
-.parent:hover .child {
+.serv-parent:hover .child {
     top: 0;
     transition: all ease 0.5s;
 }
